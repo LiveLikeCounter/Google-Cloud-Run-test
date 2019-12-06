@@ -1,3 +1,6 @@
+# gcloud config set project interestinate-website-nextjs
+# gcloud builds submit --tag gcr.io/interestinate-website-nextjs/nest-angular-ssr
+
 FROM node:10
 
 WORKDIR usr/src/app
