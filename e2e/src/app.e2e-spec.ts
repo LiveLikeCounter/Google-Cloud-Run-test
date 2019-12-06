@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('interestinateSSRNextJs app is running!');
+    expect(page.getTitleText()).toEqual('interestinate-website-ssr app is running!');
   });
 
   afterEach(async () => {

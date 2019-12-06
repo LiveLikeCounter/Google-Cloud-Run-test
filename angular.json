@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "interestinateSSRNextJs": {
+    "interestinate-website-ssr": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "interestinateSSRNextJs:build"
+            "browserTarget": "interestinate-website-ssr:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "interestinateSSRNextJs:build:production"
+              "browserTarget": "interestinate-website-ssr:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "interestinateSSRNextJs:build"
+            "browserTarget": "interestinate-website-ssr:build"
           }
         },
         "test": {
@@ -115,11 +115,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "interestinateSSRNextJs:serve"
+            "devServerTarget": "interestinate-website-ssr:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "interestinateSSRNextJs:serve:production"
+              "devServerTarget": "interestinate-website-ssr:serve:production"
             }
           }
         },
@@ -144,5 +144,5 @@
       }
     }
   },
-  "defaultProject": "interestinateSSRNextJs"
+  "defaultProject": "interestinate-website-ssr"
 }
